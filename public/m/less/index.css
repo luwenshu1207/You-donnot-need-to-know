@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+/* 第一张方案 加padding 给 main相对定位个固定高度 */
+body {
+  padding: 0.45rem 0;
+  height: 100vh;
+}
+#main {
+  /* 继承body内容的高度 */
+  height: 100%;
+  /* 给main设置相对定位 以为MUI区域滚动的容器设置了绝对定位 */
+  position: relative;
+}
+#header {
+  background-color: #006699;
+  display: flex;
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  height: 0.45rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#header h4 {
+  margin: 0;
+  width: 2.85rem;
+  text-align: center;
+  line-height: 0.45rem;
+  font-weight: normal;
+}
+#header a {
+  width: 0.45rem;
+  height: 0.45rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 0.45rem;
+  color: #fff;
+}
+#nav {
+  padding: 0.1rem;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 1.183rem;
+}
+#nav ul li a {
+  display: block;
+}
+#nav ul li a img {
+  width: 100%;
+}
+/* 广告区域的样式 */
+#banner {
+  display: flex;
+  padding: 0 0.1rem;
+}
+#banner .banner-left {
+  /* flex:2; */
+  width: 2.3667rem;
+  height: 2.4rem;
+}
+#banner .banner-left a {
+  /* 里面子元素转块 不存在缝隙 */
+  display: flex;
+  /* font-size: 0; 去掉文字大小 去掉间距*/
+}
+#banner .banner-left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#banner .banner-right {
+  /* flex:1; */
+  width: 1.1833rem;
+  height: 2.4rem;
+}
+#banner .banner-right a {
+  display: block;
+}
+#banner .banner-right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+#brand {
+  padding: .1rem;
+}
+#brand .title a {
+  display: block;
+}
+#brand .title a img {
+  width: 100%;
+}
+#brand .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#brand .content ul li {
+  width: 25%;
+}
+#brand .content ul li a {
+  display: block;
+}
+#brand .content ul li a img {
+  width: 100%;
+}
+#sport,
+#women,
+#men {
+  padding: .1rem;
+}
+#sport .title a,
+#women .title a,
+#men .title a {
+  display: block;
+}
+#sport .title a img,
+#women .title a img,
+#men .title a img {
+  width: 100%;
+}
+#sport .content ul,
+#women .content ul,
+#men .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sport .content ul li,
+#women .content ul li,
+#men .content ul li {
+  width: 50%;
+}
+#sport .content ul li a.product,
+#women .content ul li a.product,
+#men .content ul li a.product {
+  margin-top: 10px;
+  background-color: #fff;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 0px 2px aqua;
+  overflow: hidden;
+}
+#sport .content ul li a.product .product-img,
+#women .content ul li a.product .product-img,
+#men .content ul li a.product .product-img {
+  width: 100%;
+}
